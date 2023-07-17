@@ -66,6 +66,7 @@ namespace ProyectoProfeBendicion
         {
             Expression function = new Expression(expression);
             string[] missingArgs = function.getMissingUserDefinedArguments();
+            lstRange.Items.Clear();
             for (int i = 0; i < missingArgs.Length; i++)
             {
                 function.addArguments(new Argument(missingArgs[i]));
@@ -81,10 +82,6 @@ namespace ProyectoProfeBendicion
                     " = ",
                     function.calculate()));
             }
-        }
-        private void CalculateWithArguments(int domainstart, int domainend)
-        {
-
         }
         #endregion
     }
