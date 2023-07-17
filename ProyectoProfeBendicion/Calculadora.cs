@@ -33,7 +33,7 @@ namespace ProyectoProfeBendicion
         #region Formulas
         //Sucesiones numéricas
 
-        //Descomponer la expresión
+        //Validar si la expresión se puede resolver
         private bool IsAValidExpression(string expression)
         {
             Expression function = new Expression(expression);
@@ -50,6 +50,8 @@ namespace ProyectoProfeBendicion
             }
             return isValid;
         }
+
+        //Validar si son números reales
         private bool IsDomainNatural(string expression)
         {
             bool isValid = true;
@@ -61,7 +63,7 @@ namespace ProyectoProfeBendicion
             return isValid;
         }
 
-        // Extraemos los argumentos de la función para definirlos después
+        //Calcular la expresión
         private void CalculateExpression(string expression, string domain, string domainend)
         {
             Expression function = new Expression(expression);
