@@ -34,7 +34,6 @@
             txtFunction = new TextBox();
             txtDomain = new TextBox();
             label3 = new Label();
-            label4 = new Label();
             label5 = new Label();
             btnEval = new Button();
             lblError = new Label();
@@ -98,15 +97,6 @@
             label3.Size = new Size(313, 41);
             label3.TabIndex = 5;
             label3.Text = "Sucesiones Numéricas";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(421, 53);
-            label4.Name = "label4";
-            label4.Size = new Size(137, 15);
-            label4.TabIndex = 6;
-            label4.Text = "por: Equipo 5 (los furros)";
             // 
             // label5
             // 
@@ -176,7 +166,6 @@
             Controls.Add(lblError);
             Controls.Add(btnEval);
             Controls.Add(label5);
-            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(txtDomain);
             Controls.Add(txtFunction);
@@ -199,7 +188,6 @@
         private TextBox txtFunction;
         private TextBox txtDomain;
         private Label label3;
-        private Label label4;
         private Label label5;
         private Button btnEval;
         private Label lblError;
