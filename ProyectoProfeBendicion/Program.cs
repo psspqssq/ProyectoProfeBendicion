@@ -1,4 +1,6 @@
-namespace ProyectoProfeBendicion
+using ProyectoProfeBendicion;
+
+namespace ProyectoSucesionesNumericas
 {
     internal static class Program
     {
